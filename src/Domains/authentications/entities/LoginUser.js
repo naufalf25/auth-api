@@ -1,4 +1,4 @@
-class AuthenticationUser {
+class LoginUser {
   constructor(payload) {
     this._verifyPayload(payload);
 
@@ -23,4 +23,4 @@ class AuthenticationUser {
   }
 }
 
-module.exports = AuthenticationUser;
+module.exports = LoginUser;
