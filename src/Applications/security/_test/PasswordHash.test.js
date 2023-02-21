@@ -7,5 +7,6 @@ describe('PasswordHash Interface', () => {
 
     // Action and Assert
     await expect(passwordHash.hash('dummy_password')).rejects.toThrowError('PASSWORD_HASH.METHOD_NOT_IMPLEMENTED');
+    await expect(passwordHash.compare('plain_password', 'encryptedPassword')).rejects.toThrowError('PASSWORD_HASH.METHOD_NOT_IMPLEMENTED');
   });
 });
